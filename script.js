@@ -1,20 +1,36 @@
-let inputCalc = document.querySelector('.pstroka'),
-    resultCalc = document.querySelector('.vstroka');
+let inputCalc = document.querySelector('.stroka')
+let stroka = ''
+let memory = ''
+
 
 function input(i) {
-    inputCalc.value += i;  
+    memory += i
+    inputCalc.value = '';
+    inputCalc.value = memory;
+    console.log(stroka)
 }
 
-function deystviye(i) {
-    inputCalc.value += act
+function fznak(i) {
+    stroka+= document.querySelector('.stroka').value
+    stroka += i
+    console.log(stroka)
+    memory = ''
 }
 
 function mainresult(i) {
-    let result = document.querySelector('.pstroka').value
-    resultCalc.value = eval(result)  
+    stroka+= document.querySelector('.stroka').value
+    console.log(stroka)
+    inputCalc.value = eval(stroka)
+    stroka = inputCalc.value
+    memory = ''
 }
 
 function clean() {
-    document.querySelector('.pstroka').value = ' '
-    document.querySelector('.vstroka').value = ' '
+    inputCalc.value = ''
+    stroka = ''
+    memory= ''
+}
+
+function dlo() {
+    inputCalc.value = inputCalc.value.slice(0, -1)
 }
