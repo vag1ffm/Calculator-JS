@@ -1,90 +1,96 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
+
 
 li {
 	list-style: none;
 }
 
 body {
-	background-color: #DCDCDC;
+	background-color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 1005px;
 }
-
+i {
+	font-size: 35px;
+}
 main{
 	width: 390px;
-	background-color: #DCDCDC;
-	width: 100%;
-	height: 100%;
+	height: 794px;
+	background-color: #000;
 	display: flex;
 	flex-direction: column;
+	border-radius: 20px;
 
 }
 
-.stroki {
+label {
 	width: 100%;
-	height: 200px;
-	margin-top: 200px;
+	height: 100px;
+	margin: 210px 0 0 0 ;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
 }
 
-.pstroka {
+.stroka {
+	background-color: black;
 	display: flex;
 	align-items: center;
-	height: 150px;
-	justify-content: right;
-	font-size: 50px;
-	opacity: .5;
-	border: none;
-	outline: none;
-	background-color: transparent;
-	text-align: right;
-
-}
-
-
-.vstroka {
-	display: flex;
-	align-items: center;
-	height: 150px;
+	height: 100px;
+	width: 380px;
 	justify-content: right;
 	font-size: 70px;
 	border: none;
 	outline: none;
-	background-color: transparent;
 	text-align: right;
-
+	color: #FFFFFF;
 }
 
 
-
-ul {
+.list {
 	display: flex;
-	flex-wrap: wrap
+	flex-wrap: wrap;
+	margin: 15px;
 }
 
 button {
-	font-size: 50px;
-	width: 75px;
-	height: 70px;
-	border-radius: 20px;
-	background-color: #F3f3f3;
-	margin: 10px;
+	font-size: 40px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	border: none;
+	background-color: grey;
+	margin: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: #FFFFFF;
 }
-
+button:active {
+	background-color: darkgray;
+}
+.zkan {
+	background-color: darkorange;
+}
+.zkan:active {
+	background-color: goldenrod;
+}
 li:active {
 	background-color: black;
 	color: #FFF;
 }
 .iskl {
-	width: 265px;
+	width: 170px;
+}
+.up {
+	background-color: lightslategray ;
 }
